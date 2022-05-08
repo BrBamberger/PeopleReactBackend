@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 
-export default function PersonForm({ firstName, lastName, age, onTextChange, isAdding, onAddClick, onCancelClick, onUpdateClick, isEditing }){
+export default function AddPersonForm({ firstName, lastName, age, onTextChange, isAdding, onAddClick, onCancelClick, onUpdateClick, isEditing }){
     
         return <div className='row'>
             <div className='container'>
@@ -18,8 +18,10 @@ export default function PersonForm({ firstName, lastName, age, onTextChange, isA
                     </div>
 
                     <div className='col-md-2'>
-                        <button className='btn btn-block btn-primary' onClick={onAddClick}>Add</button>
+                        <button disabled='isAdding' className='btn btn-block btn-primary' onClick={onAddClick}>Add</button>
                     </div>
+
+
 
                 </div>
             </div>

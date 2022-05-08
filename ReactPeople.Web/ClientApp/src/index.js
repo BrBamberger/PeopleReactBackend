@@ -3,7 +3,7 @@ import ReactDom from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import PeopleTable from './PeopleTable';
-//import PersonForm from './PersonForm';
+//import AddPersonForm from './PersonForm';
 
 ReactDom.render(< PeopleTable />, document.getElementById('root'));
 

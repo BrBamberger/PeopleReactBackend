@@ -20,7 +20,7 @@ namespace ReactPeople.Web.Controllers
             _connectionString = configuration.GetConnectionString("ConStr");
         }
 
-        [Route("getall")]
+        [Route("getpeople")]
         public List<Person> GetPeople()
         {
             var repo = new PeopleRepo(_connectionString);
